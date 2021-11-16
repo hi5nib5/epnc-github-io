@@ -1,0 +1,135 @@
+@CHARSET "ISO-8859-1";
+
+/**
+ * Filename:epncStyle.css
+ * Version:  V1.00
+ * Copyright (c) 2021 EPNC Energy Ltd. All Rights Reserved.
+ * Written by Euan Clifford.
+ * Date: 16/11/2012
+ */
+ 
+ body{
+	margin-right: 150px;
+	margin-left: 80px;
+	font-family: Calibri, Tahoma, Verdana, sans-serif;
+	font-size: 1.0em;
+ }
+ 
+ 
+ h1, h2, h3{
+	color: #4f8735;
+	font-family: Calibri, Tahoma, Verdana, sans-serif;
+	font-weight: bold;
+ }
+ 
+ h1{
+	font-size: 2em;
+	text-align: center;
+ }
+ 
+ h2{
+	font-size: 1.5em;
+ }
+ 
+ h3{
+	font-size: 1.0em;
+ }
+ 
+ .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+ .full_width {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+#menu_bar{
+	background-image: linear-gradient(white, gray, white);
+	background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: Calibri, Tahoma, Verdana, sans-serif;
+	font-weight: bold;
+    font-size: 1.5em;
+    border-bottom: solid 1px #4f8735;
+    z-index: 10;
+}
+
+#menu_bar ul{
+	list-style-type: none;
+    border: solid 1px #4f8735;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+#menu_bar li{
+	display: inline;
+	float: left;
+	border: solid 1px #4f8735;
+	padding: 2px 10px 2px 10px;
+	margin-left: 0px;
+}
+
+#menu_bar a{
+	color: #4f8735;
+	text-decoration: none;
+}
+
+#menu_bar a:hover{
+  color: red;
+}
+ 
+/*#epnc_logo{
+	float: left;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#banner{
+	float: left;
+}*/
+
+.epnc_logo{
+	float: left;
+	width: 50%;
+	background-color: #e0f8d8;
+}
+
+div.epnc_logo img {
+  width: 100%;
+  height: 300px;
+}
+
+.selected{
+    display:block;
+	overflow:visible;
+	width:auto !important;
+	max-height:inherit !important;
+	min-height:auto !important;
+}
+
+.deselected{
+    display: block;
+	line-height:0;
+	height: 0;
+	overflow: hidden;
+}
+
+ #all_about ul{
+  list-style: none; /* Remove default bullets */
+}
+
+#all_about ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #4f8735; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
